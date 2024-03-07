@@ -1,0 +1,495 @@
+@font-face {
+    font-family: 'Playball';
+    /* Name you want to give to the font */
+    src: url('../images/fonts/Playball-Regular.ttf') format('truetype');
+    /* Path to your font file */
+}
+
+
+
+@font-face {
+    font-family: 'Abhaya Libre SemiBold';
+    /* Name you want to give to the font */
+    src: url('../images/fonts/AbhayaLibre-SemiBold.ttf') format('truetype');
+    /* Path to your font file */
+}
+
+@font-face {
+    font-family: 'Abhaya Libre ExtraBold';
+    /* Name you want to give to the font */
+    src: url('../images/fonts/AbhayaLibre-ExtraBold.ttf') format('truetype');
+    /* Path to your font file */
+}
+
+/* Path to your font file */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    border: red 2px solid;
+}
+
+header a {
+    font-family: "Work Sans", sans-serif;
+    color: #222;
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: absolute;
+    z-index: 10;
+    top: 50px;
+    left: 50px;
+    padding-bottom: 3px;
+    /* border-bottom: 1px solid #222; */
+}
+
+.brands_section1_main {
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    height: auto;
+
+
+}
+
+.body-brands {
+    background-image: url("../images/about_bg_body.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    /* Set height to auto */
+    min-height: 100vh;
+    /* Remove or comment out this line */
+
+}
+
+.main {
+
+    width: 100%;
+    height: auto;
+
+}
+
+.brands_section1_img img {
+    max-width: 100%;
+    display: block;
+
+
+}
+
+.bg_layer1 {
+    background-image: url("../images/brand_layer1.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    background-size: 25%;
+
+}
+
+.brand_heading_main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.brand_heading_line img {
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+.brand_heading_main h1 {
+    background: var(--Linear, linear-gradient(180deg, #8C5000 17.41%, #533001 84.07%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    justify-content: space-around;
+}
+
+.we_are_brand_para1 {
+    justify-content: flex-start;
+    color: var(--8-c-5000, #8C5000);
+    font-family: "Abhaya Libre SemiBold";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 57px;
+    margin-top: 3rem;
+}
+
+.we_are_brand_para1 p {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+}
+
+.we_are_brand_para1 p::first-letter {
+    font-size: 100px;
+
+}
+
+/* .our_partner_bg_img {
+    background-image: url("../images/our_partners.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-size: 50%;
+
+} */
+
+.our_partner_layer {
+    background-image: url("../images/brand_layer2.svg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-size: 20%;
+}
+
+.our_partner_h1_text h1 {
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130px;
+    /* 86.667% */
+    letter-spacing: 9px;
+    background: var(--Linear, linear-gradient(180deg, #8C5000 17.41%, #533001 84.07%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.our_partner_h1_text {
+    padding-top: 9rem;
+}
+
+.our_partner_h1_text img {
+    padding-left: 0.8rem;
+    padding-bottom: 2rem;
+}
+
+/* .partners_paper_clients_bg {
+    background-image: url("../images/partners_paper_bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    padding: 5rem 0rem 5rem 0rem;
+  }
+  
+  .partners_ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .partners_ul li {
+    padding: 1rem;
+  }
+  .partners_ul li img{
+    max-width: 80%;
+   
+  }
+  
+  .partners_bg_below-right {
+    padding-bottom: 13rem;
+    background-image: url("../images/bg_partners_right.svg");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 20%;
+  } */
+  .partners_paper_clients_bg {
+    background-image: url("../images/partners_paper_bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    padding: 5rem 0rem 5rem 0rem;
+  }
+  
+  .partners_ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+  }
+  
+  .partners_ul li {
+    padding: 1rem;
+    flex: 1 0 16.666%; /* Make each logo take 1/6th of the available space */
+  }
+  
+  .partners_ul li img {
+    max-width: 100%; /* Ensure images don't overflow their container */
+  }
+  
+  .partners_bg_below-right {
+    padding-bottom: 13rem;
+    background-image: url("../images/bg_partners_right.svg");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 20%;
+  }
+@media (min-width: 1000px)and (max-width: 1500px) {
+    .we_are_brand_para1 {
+
+        font-size: 30px;
+
+    }
+
+    .we_are_brand_para1 p {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+
+    }
+
+    .we_are_brand_para1 p::first-letter {
+        font-size: 80px;
+
+    }
+
+    .brand_heading_main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .brand_heading_line img {
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+
+    .brand_heading_main h1 {
+
+        font-size: 44px;
+
+    }
+    .our_partner_h1_text h1 {
+     
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 140%;
+        /* 86.667% */
+      
+    }
+    
+    .our_partner_h1_text {
+        padding-top: 4rem;
+    }
+    
+    .our_partner_h1_text img {
+        padding-left: 0.8rem;
+        padding-bottom: 2rem;
+    }
+    .chess_img img{
+        max-width: 70%;
+    }
+}
+
+@media (min-width: 760px)and (max-width: 999px) {
+    .we_are_brand_para1 {
+
+        font-size: 25px;
+        line-height: 130%;
+
+    }
+
+    .reverse_desk {
+        flex-direction: column-reverse;
+    }
+
+    .we_are_brand_para1 p {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+
+    }
+
+    .we_are_brand_para1 p::first-letter {
+        font-size: 70px;
+
+    }
+
+    .brand_heading_main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .brand_heading_line img {
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+
+    .brand_heading_main h1 {
+
+        font-size: 44px;
+
+
+    }
+    .our_partner_h1_text h1 {
+        font-family: "Abhaya Libre ExtraBold";
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 130px;
+      
+    }
+    
+    .our_partner_h1_text {
+        padding-top: 1rem;
+      
+    }
+    .chess_img img{
+        max-width: 70%;
+    }
+}
+
+@media (min-width: 300px)and (max-width: 759px) {
+    .brands_section1_main {
+        padding-top: 8rem;
+        padding-bottom: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+       
+    }
+    .we_are_brand_para1 {
+
+        font-size: 20px;
+        line-height: 130%;
+
+    }
+
+    .we_are_brand_para1 p {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+    }
+
+    .we_are_brand_para1 p::first-letter {
+        font-size: 70px;
+
+    }
+
+    .brand_heading_main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .brand_heading_line img {
+        padding-left: 2rem;
+        padding-right: 1rem;
+        width: 70%;
+    }
+
+    .brand_heading_main h1 {
+
+        font-size: 34px;
+
+
+    }
+
+    .reverse_desk {
+        flex-direction: column-reverse;
+    }
+
+    .body-brands {
+        background-image: url("../images/about_bg_body.svg");
+        background-size: initial;
+        background-repeat: no-repeat;
+        max-width: 100%;
+
+        min-height: 100vh;
+
+    }
+    .our_partner_h1_text h1 {
+        font-family: "Abhaya Libre ExtraBold";
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 120%;
+      
+    }
+    
+    .our_partner_h1_text {
+        padding-top: 1rem;
+      
+    }
+    .chess_img img{
+        max-width: 70%;
+    }
+    /* .partners_ul {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+      } */
+      .partners_ul li {
+        flex-basis: 30.33%; 
+      }
+      .partners_ul li img{
+       width:80%;
+        cursor: grab;
+      }
+      .partners_paper_clients_bg {
+        background-image: url("../images/partners_paper_bg.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        padding: 7rem 2rem 6rem 2rem;
+      }
+}
+.ANCIENT_text p{
+    color: #000;
+text-align:left;
+font-family: "Abhaya Libre SemiBold";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+padding-left: 15rem;
+}
+
+@media (min-width: 300px)and (max-width: 600px) {
+    .ANCIENT_text p{
+        color: #000;
+    text-align:center;
+    font-family: "Abhaya Libre SemiBold";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 0rem;
+    }
+
+
+}

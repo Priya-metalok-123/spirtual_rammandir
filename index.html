@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href=" https://www.metalok.io/images/favicon.png" type="image/x-icon">
+    <title>RamMandir</title>
+
+    <style>
+        @font-face {
+            font-family: 'Playball';
+            /* Name you want to give to the font */
+            src: url('./images/fonts/Playball-Regular.ttf') format('truetype');
+            /* Path to your font file */
+        }
+
+        @font-face {
+            font-family: 'Abhaya Libre ExtraBold';
+            /* Name you want to give to the font */
+            src: url('./images/fonts/AbhayaLibre-ExtraBold.ttf') format('truetype');
+            /* Path to your font file */
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .video-main-enter {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            /* Push the video behind other content */
+        }
+
+        .video-container {
+            width: 100%;
+            /* Use viewport units to ensure full-width */
+            height: 100vh;
+            /* Use viewport units to ensure full-height */
+            position: relative;
+        }
+
+        video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .content_land_main {
+            /* Adjust the margin as needed */
+            position: absolute;
+            top: 10%;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            transition: opacity 2s ease-in-out;
+        }
+
+        .content_land_main h4 {
+
+            color: #884100;
+            text-align: center;
+            font-family: "Abhaya Libre ExtraBold";
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 30%;
+        }
+
+        .content_land_main h1 {
+            color: #813D22;
+            text-align: center;
+            font-family: 'Playball';
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30%;
+        }
+
+        @media (min-width: 300px) and (max-width: 640px) {
+
+            .content_land_main h4 {
+                font-size: 20px;
+            }
+
+            .content_land_main h1 {
+                font-size: 24px;
+                font-style: normal;
+
+            }
+        }
+
+        @media (min-width: 300px) and (max-width: 347px) {
+
+            .content_land_main h4 {
+                font-size: 16px !important;
+            }
+
+            .content_land_main h1 {
+                font-size: 18px !important;
+                font-style: normal;
+
+            }
+        }
+
+        @media (min-width: 650px) and (max-width: 1300px) {
+
+            .content_land_main h4 {
+                font-size: 28px;
+            }
+
+            .content_land_main h1 {
+                font-size: 50px;
+                font-style: normal;
+
+            }
+        }
+
+        @media only screen and (device-width: 390px)
+        /* Width of iPhone 14 */
+        and (device-height: 844px)
+        /* Height of iPhone 14 */
+        and (-webkit-device-pixel-ratio: 3)
+        /* Pixel ratio of iPhone 14 */
+        and (orientation: portrait) {
+            .content_land_main h4 {
+                font-size: 15px !important;
+                line-height: 120%;
+            }
+
+            .content_land_main h1 {
+                font-size: 18px !important;
+                font-style: normal;
+                line-height: 120%;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-main-enter">
+        <div class="video-container">
+            <video id="main-video" autoplay loop muted playsinline>
+                <source src="./images/land.mp4" type="video/mp4">
+                <!-- Add additional source elements for other video formats if needed -->
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="content_land_main" id="content_land_main">
+        <img src="./images/logo.svg" alt="logo" />
+        <h4>Embark on the greatest pilgrimage of all</h4>
+        <h1>The Ram Mandir in the Virtual World </h1>
+        <!-- <h4>This text scrolls over the fixed video background.</h4>
+    <h4>Feel free to explore!</h4> -->
+    </div>
+
+    <script>
+        const video = document.getElementById('main-video');
+        const content = document.getElementById('content_land_main');
+
+        video.addEventListener('timeupdate', function () {
+            if (video.currentTime >= 7) {
+                content.classList.add('show'); // Show the content with smooth transition
+                setTimeout(function () {
+                    window.location.href = "./slider.html"; // Redirect after transition
+                }, 2000); // Wait for 2 seconds before redirecting
+            }
+        });
+
+        // Restart video from beginning when the page is refreshed
+        window.onload = function () {
+            video.currentTime = 0;
+        };
+    </script>
+
+</body>
+
+</html>

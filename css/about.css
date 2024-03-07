@@ -1,0 +1,1544 @@
+@font-face {
+    font-family: 'Playball';
+    src: url('../images/fonts/Playball-Regular.ttf') format('truetype');
+
+}
+
+
+
+@font-face {
+    font-family: 'Abhaya Libre SemiBold';
+    src: url('../images/fonts/AbhayaLibre-SemiBold.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Abhaya Libre ExtraBold';
+    src: url('../images/fonts/AbhayaLibre-Bold.ttf') format('truetype');
+
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/about/image\ 19.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e6c097;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.page-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/about/image\ 19.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 9999; /* Ensure it's above other elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out;
+  }
+ 
+.about_section1 {
+    width: 100%;
+    height: 980px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.img-fluid {
+    max-width: 90%;
+}
+
+.about_img_text p {
+    color: var(--8-c-5000, #8C5000);
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 38px;
+    right: 50%;
+    top: 27%;
+    left: 11%;
+    position: absolute;
+}
+
+.we_are_metalok_text_underline {
+    border-bottom: #8C5000 solid 2px;
+    height: 5px;
+    width: 40%;
+    right: 50%;
+    top: 42%;
+    left: 11%;
+    position: absolute;
+
+}
+
+.about_img_text p::first-letter {
+    background: var(--Linear, linear-gradient(180deg, #8C5000 17.41%, #533001 84.07%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 118px;
+}
+
+.about_img_text h1 {
+    background: var(--Linear, linear-gradient(180deg, #8C5000 17.41%, #533001 84.07%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    left: 10%;
+    right: 53%;
+    top: 46%;
+    position: absolute;
+
+}
+
+.about_img_text h2 {
+    background: var(--Linear, linear-gradient(180deg, #8C5000 17.41%, #533001 84.07%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    left: 20%;
+    right: 40%;
+    top: 58%;
+    position: absolute;
+}
+
+.about_img_text h3 {
+    background: var(--Linear, linear-gradient(180deg, #8C5000 17.41%, #533001 84.07%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    left: 42%;
+    right: 30%;
+    top: 69%;
+    position: absolute;
+}
+
+.about_section2 {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.bg_text_about_section2 {
+    background-image: url("../images/about/paper_bg_about.svg") !important;
+    width: 100%;
+    height: 480px;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 3rem;
+    background-size: cover;
+}
+
+.bg_text_about_section2 h4 {
+    color: #000;
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    margin: 2rem 3rem 2rem 3rem;
+    top: 30%;
+    left: 15%;
+
+}
+
+.bg_text_about_section2 h3 {
+    color: #000;
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    margin: 2rem 3rem 2rem 3rem;
+    top: 45%;
+    left: 20%;
+
+}
+
+.about_section3 {
+    background-image: url('../images/about/about_group4.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    padding: 10rem;
+}
+
+.about_section3_img {
+    height: 940px;
+
+}
+
+.about_section3_text_main {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 10rem 0rem 10rem;
+
+
+}
+
+.about_section3_text_main p {
+    color: #FFF;
+    font-family: "Abhaya Libre SemiBold";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 57px;
+    width: 80%;
+    margin: auto;
+    padding-top: 20rem;
+
+}
+
+.about_section3_text_main p::first-letter {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 118px
+}
+
+.bordered-content {
+    border-left: 3px solid #faf8f8;
+    /* Border on the left side */
+    border-right: 3px solid #fdfbfb;
+
+}
+
+.about_section4 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 3rem;
+}
+
+.about_team_img {
+    width: 100%;
+    height: auto;
+    flex: 2;
+}
+
+.about_team_img img {
+    height: 70%;
+    padding-left: 1rem;
+    padding-top: 10rem;
+}
+
+.about_team_main {
+    display: flex;
+    flex-direction: row;
+}
+
+.about_team_bg {
+    background-image: url("../images/about_bg_text_svg.svg");
+    background-repeat: no-repeat;
+    background-position: right top center;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    flex: 3;
+}
+
+.border_top_about_team_span {
+    margin: auto;
+    padding-top: 5rem;
+}
+
+.about_team_bg h1 {
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 160px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 136px;
+    letter-spacing: 9px;
+    background: var(--Linear, linear-gradient(180deg, #8C5000 17.41%, #533001 84.07%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about_team_bg p {
+    color: var(--8-c-5000, #8C5000);
+    font-family: "Abhaya Libre SemiBold";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 57px;
+    padding-top: 3rem;
+}
+
+.about_team_bg p::first-letter {
+    color: var(--8-c-5000, #8C5000);
+    font-family: "Abhaya Libre SemiBold";
+    font-size: 118px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 57px;
+}
+
+.about_team_bg p .strong {
+    color: var(--8-c-5000, #8C5000);
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 57px;
+}
+
+.about_section5 {
+    width: 100%;
+    height: auto;
+}
+
+.about_section5 .about_section5_inner {
+    background-image: url("../images/about/about_2.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 45%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 680px;
+    padding: 2rem;
+}
+
+.about_section5 .about_section5_inner p {
+    text-align: center;
+    font-family: "Abhaya Libre SemiBold";
+    font-size: 36px;
+    font-weight: 400;
+    background: var(--Linear, linear-gradient(180deg, #8C5000 17.41%, #533001 84.07%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 7rem;
+}
+
+.about_section6 {
+
+    width: 100%;
+    height: auto;
+}
+
+.another_piller_section {
+    width: 100%;
+}
+
+.another_piller_section img {
+    width: 100%;
+}
+
+.another_piiler_line {
+    text-align: end;
+}
+
+.another_piller_content {
+    padding: 4rem;
+}
+
+.another_piller_content p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 57px;
+    color: var(--8-c-5000, #8C5000);
+    font-family: "Abhaya Libre SemiBold";
+}
+
+.another_piller_content_sub {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 57px;
+    color: var(--8-c-5000, #8C5000);
+    font-family: "Abhaya Libre SemiBold";
+
+}
+
+.another_piller_content p::first-letter {
+
+    color: var(--8-c-5000, #8C5000);
+    font-family: "Abhaya Libre SemiBold";
+    font-size: 118px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 57px;
+    /* 44.531% */
+}
+
+@media (min-width: 1600px)and (max-width: 1690px) {
+    .about_img_text h1 {
+        left: 10%;
+        right: 53%;
+        top: 46%;
+        position: absolute;
+        font-size: 86px !important;
+    }
+
+    .about_img_text h2 {
+
+        font-size: 86px !important;
+    }
+
+    .about_img_text h3 {
+
+        font-size: 86px !important;
+    }
+    .about_section3 {
+    
+        background-size: 100%;
+        padding: 10rem 4rem 10rem 4rem !important;
+    }
+    .about_section3_text_main {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem !important;
+    }
+}
+
+@media (min-width: 1400px)and (max-width: 1450px) {
+    .about_img_text h1 {
+        font-size: 66px !important;
+        top: 47% !important;
+        line-height: 120%;
+    }
+    .about_img_text h2 {
+        font-size: 66px !important;
+        right: 40%;
+        top: 54% !important;
+        line-height: 120%;
+    }
+    .about_img_text h3 {
+        font-size: 66px !important;
+        right: 30% !important;
+        top: 63% !important;
+        line-height: 120%;
+    }
+    .we_are_metalok_text_underline {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+        top: 40% !important;
+    }
+    .about_img_text p {
+        top: 20%;
+        left: 11%;
+    }
+    .about_section1 {
+        height: 770px !important;
+        position: relative;
+    }
+    .img-fluid {
+        max-width: 100%;
+    }
+    .about_section3 {
+    
+        background-size: 100%;
+        padding: 10rem 4rem 10rem 4rem !important;
+    }
+    .about_section3_text_main {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem !important;
+    }
+    .about_section3_text_main p {
+    
+        padding-top: 15rem !important;
+    
+    }
+    
+    .about_section3_text_main p::first-letter {
+        font-size: 98px !important;
+    }
+    .about_section3_img {
+        height: 760px;
+    }
+    .about_team_bg h1 {
+       
+        font-size: 100px;
+        line-height: 100%;
+
+    }
+    .about_team_bg p {
+        color: var(--8-c-5000, #8C5000);
+        font-family: "Abhaya Libre SemiBold";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        padding-top: 3rem;
+    }
+}
+
+@media (min-width: 1300px)and (max-width: 1390px) {
+    .about_img_text p {
+        top: 15%;
+        left: 11%;
+    }
+    .img-fluid {
+        max-width: 100%;
+    }
+    .we_are_metalok_text_underline {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+        top: 32% !important;
+    }
+    .about_img_text h1 {
+        font-size: 66px !important;
+        top: 37% !important;
+        line-height: 120%;
+    }
+    .about_img_text h2 {
+        font-size: 66px !important;
+        right: 40%;
+        top: 44% !important;
+        line-height: 120%;
+    }
+    .about_img_text h3 {
+        font-size: 66px !important;
+        right: 30% !important;
+        top: 53% !important;
+        line-height: 120%;
+    }
+    .about_img_text p::first-letter {
+        font-size: 88px;
+    }
+    .bg_text_about_section2 {
+        background-image: url(../images/about_bg_text.png);
+        background-size: 100%;
+       
+    }
+    .about_section2 {
+       padding-top: 0% !important;
+    }
+    .bg_text_about_section2 h4 {
+        font-size: 48px;
+        margin: 2rem 3rem 2rem 3rem;
+        top: 20% !important;
+        left: 13% !important;
+    }
+    .bg_text_about_section2 h3 {
+        font-size: 48px;
+        top: 35% !important;
+        left: 17% !important;
+    }
+    .about_section3 {
+    
+        background-size: 100%;
+        padding: 10rem 4rem 10rem 4rem !important;
+    }
+    .about_section3_text_main {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem !important;
+    }
+    .about_section3_text_main p {
+    
+        padding-top: 12rem !important;
+        font-size: 28px !important;
+    
+    }
+    
+    .about_section3_text_main p::first-letter {
+        font-size: 98px !important;
+    }
+    .about_section3_img {
+        height: 720px;
+    }
+    .about_section5 .about_section5_inner {
+        background-image: url(../images/about/about_2.svg);
+        background-size: 55%;
+        width: 100%;
+        height: auto;
+        padding: 0rem !important;
+    }
+    .about_section5_inner p {
+font-size: 26px !important;
+
+    }
+    .about_team_img img {
+        height: 70%;
+        padding-left: 1rem;
+        padding-top: 7rem;
+    }
+    .about_team_bg p {
+     
+        line-height: 110%;
+        padding-top: 0rem;
+    }
+    .about_team_bg h1 {
+      
+        font-size: 100px;
+      
+        line-height: 100%;
+    }
+    .about_team_bg p::first-letter {
+      
+        font-size: 98px;
+       
+       
+    }
+    
+}
+@media (min-width: 1200px)and (max-width: 1295px) {
+    .about_img_text p {
+        top: 15%;
+        left: 11%;
+        font-size: 20px;
+    }
+    .img-fluid {
+        max-width: 100%;
+    }
+    .we_are_metalok_text_underline {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+        top: 32% !important;
+    }
+    .about_img_text h1 {
+        font-size: 52px !important;
+        top: 37% !important;
+        line-height: 120%;
+    }
+    .about_img_text h2 {
+        font-size: 52px !important;
+        right: 40%;
+        top: 44% !important;
+        line-height: 120%;
+    }
+    .about_img_text h3 {
+        font-size: 52px !important;
+        right: 30% !important;
+        top: 53% !important;
+        line-height: 120%;
+    }
+    .about_img_text p::first-letter {
+        font-size: 68px;
+    }
+    .bg_text_about_section2 {
+        background-image: url(../images/about_bg_text.png);
+        background-size: 100%;
+       
+    }
+    .about_section2 {
+       padding-top: 0% !important;
+    }
+    .bg_text_about_section2 h4 {
+        font-size: 48px;
+        margin: 2rem 3rem 2rem 3rem;
+        top: 20% !important;
+        left: 13% !important;
+    }
+    .bg_text_about_section2 h3 {
+        font-size: 48px;
+        top: 35% !important;
+        left: 17% !important;
+    }
+    .about_section3 {
+    
+        background-size: 100%;
+        padding: 10rem 4rem 10rem 4rem !important;
+    }
+    .about_section3_text_main {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem !important;
+    }
+    .about_section3_text_main p {
+    
+        padding-top: 9rem !important;
+        font-size: 24px !important;
+    
+    }
+    
+    .about_section3_text_main p::first-letter {
+        font-size: 98px !important;
+    }
+    .about_section1 {
+        height: 770px !important;
+        position: relative;
+    }
+    .about_section3_img {
+        height: 640px;
+    }
+    .about_section5 .about_section5_inner {
+        background-image: url(../images/about/about_2.svg);
+        background-size: 50%;
+        width: 100%;
+        height: auto;
+        padding: 0rem !important;
+    }
+    .about_section5_inner p {
+font-size: 26px !important;
+
+    }
+    .about_team_img img {
+        height: 80%;
+        padding-left: 1rem;
+        padding-top: 5rem;
+        margin: auto;
+        width: 100%;
+    }
+    .about_team_bg h1 {
+        font-size: 100px;
+        font-weight: 800;
+        line-height: 100%;
+
+    }
+    .about_team_bg p {
+        color: var(--8-c-5000, #8C5000);
+        font-family: "Abhaya Libre SemiBold";
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        padding-top: 1rem;
+    }
+    .about_team_bg p::first-letter {
+
+        font-size: 98px;
+       
+    }
+    
+}
+@media (min-width: 1000px)and (max-width: 1199px) {
+    .about_img_text p {
+        top: 25%;
+        left: 11%;
+        font-size: 20px;
+    }
+    .img-fluid {
+        max-width: 100%;
+    }
+    .we_are_metalok_text_underline {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+        top: 45% !important;
+    }
+    .about_img_text h1 {
+        font-size: 65px !important;
+        top: 52% !important;
+        line-height: 120%;
+        right:30%;
+    }
+    .about_img_text h2 {
+        font-size: 72px !important;
+        right: 25%;
+        top: 59% !important;
+        line-height: 120%;
+    }
+    .about_img_text h3 {
+        font-size: 79px !important;
+        right: 30% !important;
+        top: 69% !important;
+        line-height: 120%;
+    }
+    .about_img_text p::first-letter {
+        font-size: 68px;
+    }
+    .bg_text_about_section2 {
+        background-image: url("../images/about/paper_bg_about.svg") !important;
+        background-size: 100%;
+       
+    }
+    .about_section2 {
+       padding-top: 0% !important;
+    }
+    .bg_text_about_section2 h4 {
+        font-size: 38px !important;
+        margin: 2rem 3rem 2rem 3rem;
+        top: 16% !important;
+        left: 13% !important;
+    }
+    .bg_text_about_section2 h3 {
+        font-size: 38px;
+        top: 27% !important;
+        left: 17% !important;
+    }
+    .about_section3 {
+    
+        background-size: 100%;
+        padding: 10rem 4rem 10rem 4rem !important;
+    }
+    .about_section3_text_main {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem !important;
+    }
+    .about_section3_text_main p {
+    
+        padding-top: 5rem !important;
+        font-size: 20px !important;
+        line-height: 200%;
+    
+    }
+    
+    .about_section3_text_main p::first-letter {
+        font-size: 98px !important;
+    }
+    .about_section1 {
+        height: 770px !important;
+        position: relative;
+    }
+    .about_section3_img {
+        height: 440px;
+    }
+    .about_section5 .about_section5_inner {
+        background-image: url(../images/about/about_2.svg);
+        background-size: 48%;
+        width: 100%;
+        height: auto;
+        padding: 0rem !important;
+    }
+    .about_section5_inner p {
+font-size: 23px !important;
+
+    }
+    .about_team_img img {
+        height: 80%;
+        padding-left: 1rem;
+        padding-top: 5rem;
+        margin: auto;
+        width: 100%;
+    }
+    .about_team_bg h1 {
+        font-size: 90px;
+        font-weight: 800;
+        line-height: 100%;
+
+    }
+    .about_team_bg p {
+        color: var(--8-c-5000, #8C5000);
+        font-family: "Abhaya Libre SemiBold";
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        padding-top: 1rem;
+    }
+    .about_team_bg p::first-letter {
+
+        font-size: 88px;
+       
+    }
+    .another_piller_content p {
+        font-size: 23px;
+        line-height: 120%;
+    }
+    .another_piller_content_sub {
+        font-size: 23px;
+
+        line-height: 120%;
+       
+    }
+    .about_team_bg p .strong {
+
+        font-size: 30px;
+       
+    }
+}
+
+@media (min-width: 310px) and (max-width: 602px) {
+    
+.page-loader img{
+    width:50%;
+}
+    
+    .body {
+      
+        background-size:initial;
+        background-color: #e6c097;
+       
+     min-height: 100vh;
+        width: 100%;
+        max-height: 100%;
+       
+     
+    }
+    .about_section1 {
+        width: 100%;
+        height: auto !important;
+        position:static;
+        display: flex;
+        flex-direction: column;
+      
+        
+    
+    }
+    .about_img_text p {
+        font-size: 14px;
+        right: 0%;
+        top: 0%;
+        left: 0%;
+        padding: 2rem;
+        position: static;
+       
+    }
+    .img-fluid {
+        width: 80%;
+        height: 100%;
+        padding-top: 5rem;
+        padding-bottom: 0rem;
+     
+    }
+    .we_are_metalok_text_underline {
+        border-bottom: #8C5000 solid 2px;
+        height: 5px;
+        width: 70%;
+        right: 0%;
+        top: 0%;
+        left: 0%;
+        bottom: 0%;
+        position: static;
+       
+    
+    }
+    .section1_reverse{
+        flex-direction: column-reverse;
+    }
+    
+    .about_img_text p::first-letter {
+      
+        font-size: 78px !important;
+    }
+    
+    .about_img_text h1 {
+       
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 100%;
+        left:0%;
+      padding: 0rem;
+        right:0%;
+        top: 0%;
+        position: static;
+        text-align: center;
+        
+    
+    }
+    
+    .about_img_text h2 {
+      
+        font-size: 30px;
+       width:100%;
+       top: 0%;
+        position: absolute;
+        left:0%;
+        padding: 0rem;
+        right:0%;
+        text-align: center;
+        position: static;
+        
+    }
+    
+    .about_img_text h3 {
+    
+        font-size: 30px;
+       width:100%;
+        font-weight: 800;
+        line-height: 100%;
+        left:0%;
+        text-align: center;
+        padding: 0rem;
+       right:0%;
+       top: 0%;
+        position:static;
+    }
+    .about_section2 {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 0rem;
+       
+    }
+    
+    .bg_text_about_section2 {
+        background-image: url("../images/about/paper_bg_about.svg") !important;
+        width: 100%;
+        height: 150px;
+        background-repeat: no-repeat;
+        /* position: relative; */
+        padding: 3rem;
+        background-size: 100%;
+    }
+    
+    /* .bg_text_about_section2 h4 {
+        color: #000;
+        font-family: "Abhaya Libre ExtraBold";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        position: absolute;
+        margin: 2rem 3rem 2rem 3rem;
+        top: 0%;
+        right: 0;
+        left: 0%;
+        display: none !important;
+    
+    } */
+    
+    /* .bg_text_about_section2 h3 {
+        color: #000;
+        font-family: "Abhaya Libre ExtraBold";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        position: absolute;
+        margin: 2rem 3rem 2rem 3rem;
+      
+        right: 0;
+        left: 0%;
+       top:10%;
+       display: none !important;
+    
+    } */
+    .about_section3 {
+        background-image: url('../images/about/about_bg_group.svg');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 900px;
+        background-size: 100%;
+        padding: 0%;
+     
+       
+    }
+    
+    .about_section3_img {
+        height:auto;
+    
+    }
+    
+    .about_section3_text_main {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem 0rem 0rem 0rem;
+    
+    
+    }
+    
+    .about_section3_text_main p {
+        color: #fdfbfb;
+        font-family: "Abhaya Libre SemiBold";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+        width: 84%;
+        margin: auto;
+        padding-top: 21rem;
+    
+    }
+    
+    .about_section3_text_main p::first-letter {
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 58px
+    }
+    
+    .bordered-content {
+        border-left: 3px solid #faf8f8;
+        /* Border on the left side */
+        border-right: 3px solid #fdfbfb;
+    
+    }
+    
+.about_section5 {
+    width: 100%;
+    height: auto;
+   
+}
+
+.about_section5 .about_section5_inner {
+    background-image: url("../images/about/about_2.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+.about_section5 .about_section5_inner p {
+    text-align: center;
+    font-family: "Abhaya Libre SemiBold";
+    font-size: 18px;
+    font-weight: 400;
+    background: var(--Linear, linear-gradient(180deg, #8C5000 17.41%, #533001 84.07%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 0rem;
+}
+.border_top_about_team_span {
+    margin: auto;
+    padding-top: 0rem;
+}
+
+
+.about_section4 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 3rem;
+}
+
+.about_team_img {
+    width: 100%;
+    height: auto;
+    flex: 2;
+}
+
+.about_team_img img {
+ width: 70%;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.about_team_main {
+    display: flex;
+    flex-direction:column;
+}
+
+.about_team_bg {
+    background-image: url("../images/about_bg_text_svg.svg");
+    background-repeat: no-repeat;
+    background-position: right top center;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0rem;
+    flex: 3;
+}
+
+.border_top_about_team_span img {
+    margin:0;
+    padding-top: 0rem;
+    width:100%;
+    align-items: center;
+    text-align: center;
+}
+
+.about_team_bg h1 {
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 9px;
+    background: var(--Linear, linear-gradient(180deg, #8C5000 17.41%, #533001 84.07%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about_team_bg p {
+    color: var(--8-c-5000, #8C5000);
+    font-family: "Abhaya Libre SemiBold";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    padding-top: 1rem;
+    text-align: left;
+}
+
+.about_team_bg p::first-letter {
+    color: var(--8-c-5000, #8C5000);
+    font-family: "Abhaya Libre SemiBold";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 57px;
+}
+
+.about_team_bg p .strong {
+    color: var(--8-c-5000, #8C5000);
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 0;
+}
+.about_section6 {
+
+    width: 100%;
+    height: auto;
+}
+
+.another_piller_section {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.another_piller_section img {
+    width: 60%;
+    text-align: center;
+    align-items: center;
+}
+
+.another_piiler_line  img{
+    text-align: center;
+    width:100%;
+}
+
+.another_piller_content {
+    padding: 1rem;
+    text-align: left;
+
+}
+
+.another_piller_content p {
+    font-size: 18px;
+    line-height: 140%;
+    padding-left: 1rem;
+   
+}
+
+.another_piller_content_sub {
+    font-size: 18px;
+ 
+    font-weight: 600;
+    line-height: 140%;
+   
+    padding-left: 1rem;
+
+}
+
+.another_piller_content p::first-letter {
+
+
+    font-size: 58px;
+  
+    line-height: 57px;
+    /* 44.531% */
+}
+/* .about_section1_mobile1{
+    background-image: url("../images/brand_layer2.svg");
+    background-position: top right ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:500px;
+} */
+}
+
+@media (min-width: 760px) and (max-width: 1000px) {
+    .body {
+      
+        background-size:cover;
+        background-color: #e6c097;
+       height:auto;
+     min-height: 100vh;
+        width: 100%;
+     
+    }
+    .about_section1 {
+        width: 100%;
+        height: 780px;
+        position:static;
+        display: flex;
+        flex-direction: column;
+      
+        
+    
+    }
+    .about_img_text p {
+        font-size: 18px;
+        right: 0%;
+        top: 32%;
+        left: 3%;
+        padding: 2rem;
+       
+    }
+    .img-fluid {
+        width: 80%;
+        height: 90%;
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+     
+    }
+    .we_are_metalok_text_underline {
+        border-bottom: #8C5000 solid 2px;
+        height: 5px;
+        width: 70%;
+        right: 50%;
+        top: 60%;
+        left: 12%;
+       
+    
+    }
+    
+    .about_img_text p::first-letter {
+      
+        font-size: 78px !important;
+    }
+    
+    .about_img_text h1 {
+       
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 100%;
+        left:0%;
+      padding: 1.5rem;
+        right:0%;
+        top: 42%;
+        position: absolute;
+        text-align: center;
+        
+    
+    }
+    
+    .about_img_text h2 {
+      
+        font-size: 30px;
+       width:100%;
+       top: 48%;
+        position: absolute;
+        left:0%;
+        padding: 1.5rem;
+        right:0%;
+        text-align: center;
+        
+    }
+    
+    .about_img_text h3 {
+    
+        font-size: 30px;
+       width:100%;
+        font-weight: 800;
+        line-height: 100%;
+        left:0%;
+        text-align: center;
+        padding: 1.5rem;
+       right:0%;
+       top: 52%;
+       
+    }
+    .bg_text_about_section2 {
+        background-image: url("../images/about/paper_bg_about.svg") !important;
+        background-size: 100%;
+       margin-top: 0rem;
+       
+    }
+    .bg_text_about_section2 h4 {
+        color: #000;
+        font-family: "Abhaya Libre ExtraBold";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+       
+        margin:0;
+        top: 18%;
+        left: 15%;
+    }
+    .bg_text_about_section2 h3 {
+        color: #000;
+        font-family: "Abhaya Libre ExtraBold";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        position: absolute;
+        margin: 0;
+        top: 25%;
+        left: 20%;
+    }
+    .about_section3 {
+    
+        background-size: 100%;
+        padding: 2rem 2rem 2rem 2rem !important;
+    }
+    .about_section3_text_main {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem !important;
+    }
+    .about_section3_text_main p {
+    
+        padding-top: 5rem !important;
+        font-size: 18px !important;
+        line-height: 200%;
+    
+    }
+    
+    .about_section3_text_main p::first-letter {
+        font-size: 98px !important;
+    }
+    .about_section2 {
+        
+        padding: 0rem;
+    }
+    .about_section3_img {
+        height: 540px;
+    }
+    .about_section5 .about_section5_inner p {
+        text-align: center;
+        font-family: "Abhaya Libre SemiBold";
+        font-size: 22px;
+        font-weight: 400;
+        background: var(--Linear, linear-gradient(180deg, #8C5000 17.41%, #533001 84.07%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-top: 7rem;
+    }
+    .about_section5 .about_section5_inner {
+        background-image: url(../images/about/about_2.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 80%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 680px;
+        padding: 2rem;
+    }
+    .about_team_bg h1 {
+     
+        font-size: 100px;
+      
+        line-height: 120%;
+       
+    }
+    .about_team_img img {
+        height: 80%;
+        padding-left: 1rem;
+        padding-top: 0rem;
+    }
+    .about_team_bg p {
+    
+        font-size: 20px;
+        line-height: 180%;
+        padding-top: 1em;
+    }
+    .about_team_bg p::first-letter {
+       
+        font-size: 68px;
+     
+      
+        line-height: 57px;
+    }
+    
+    .about_team_bg p .strong {
+        color: var(--8-c-5000, #8C5000);
+        font-family: "Abhaya Libre ExtraBold";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 57px;
+    }
+    .about_section6{
+        flex-direction: column-reverse;
+    }
+    .another_piller_section img {
+        width: 60%;
+      
+    }
+    .another_piller_section {
+        text-align: center;
+      
+    }
+    .another_piller_content p {
+        font-size: 20px;
+       
+        line-height: 180%;
+       
+    }
+    .another_piller_content_sub {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 180%;
+       
+    }
+    .another_piller_content p::first-letter {
+
+  
+        font-size: 68px;
+       
+    }
+}
+@media (max-width: 768px) and (max-height: 1024px) {
+    /* Adjust styles for 768x1024 viewport */
+    /* Add specific styles here */
+}
+
+/* Media query for 768x366 */
+@media (max-width: 768px) and (max-height: 366px) {
+    /* Adjust styles for 768x366 viewport */
+    /* Add specific styles here */
+}

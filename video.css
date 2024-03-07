@@ -1,0 +1,236 @@
+.min-screen {
+    position: relative;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    
+}
+.min-screen .screen-box {
+    display: none;
+}
+
+.min-screen .screen-box.active {
+    display: block;
+}
+.mobile{
+    display: none;
+}
+.min-screen .screen-box .screen {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.min-screen .screen-box .screen video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    animation: fadein 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out;
+}
+
+@keyframes fadein {
+    0% {
+        transform: scale(1.4);
+    }
+}
+.min-screen .screen-box .screen .content,
+.min-screen .screen-box .screen .content1 {
+    position: absolute;
+    bottom: 10%; /* Adjust this value as needed */
+    left: 42%;
+    right:45%;
+    transform: translateX(-50%);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.btn-info{
+    width: 600px;
+    height: 160px;
+    background: url("./images/bg_text_video_paper.svg"), no-repeat;
+  
+    /* border: #0c0c0c solid 1px; */
+    border-radius: 4px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    /* position: relative; */
+}
+.min-screen .screen-box .screen .content p {
+    color: #6D2509;
+    font-family: "Abhaya Libre", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 33px;
+    text-align: center;
+    margin: auto;
+    /* animation: anymat 0.4s linear 0.6s backwards; */
+}
+.min-screen .screen-box .screen .content span {
+    color: #6D2509;
+    font-family: "Abhaya Libre", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 33px;
+    /* animation: anymat 0.4s linear 0.6s backwards; */
+}
+.min-screen .screen-box .screen .content1 p {
+    color: #6D2509;
+    font-family: "Abhaya Libre", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    text-align: center;
+    margin: auto;
+    /* position: absolute;
+    top:20%;
+    left:9%; */
+
+    /* animation: anymat 0.4s linear 0.6s backwards; */
+}
+.min-screen .screen-box .screen .content1 span {
+    color: #6D2509;
+    font-family: "Abhaya Libre", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 33px;
+    text-align: center;
+    margin: auto;
+    /* position: absolute;
+    top:40%;
+    left:19%; */
+    /* animation: anymat 0.4s linear 0.6s backwards; */
+}
+.min-screen .screen-box .screen .content .btn {
+    display: inline-block;
+    /* padding: 0.5rem 4rem; */
+    background: none;
+    border: 0.2rem solid #333;
+    color: rgb(224, 224, 224);
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s linear;
+    animation: anymat 0.4s linear 0.2s backwards;
+}
+
+@keyframes anymat {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) translateY(-50px);
+    }
+}
+
+.min-screen #next,
+.min-screen #back {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    background: #fff;
+    color: rgb(95, 95, 95);
+    font-weight: bold;
+    height: 2.2rem;
+    width: 2.2rem;
+    line-height: 1.2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.8rem;
+}
+
+.min-screen #next {
+    right: 0;
+}
+
+.min-screen #back {
+    left: 0;
+}
+@media (min-width: 300px) and (max-width: 640px){
+    .min-screen .screen-box .screen .content,
+    .min-screen .screen-box .screen .content1 {
+        left: 7%;
+        right: 10%;
+        transform: none;
+     
+    }
+    .btn-info{
+        width: 320px !important;
+        height: 100px ;
+        background-size: contain;
+        line-height: 23px !important;
+        background-size: cover;
+       
+    }
+  
+    .min-screen .screen-box .screen .content p {
+      
+        font-size: 15px !important;
+    
+        line-height:100% !important;
+        margin: 0.8rem 0.5rem 0.2rem 0.5rem;
+       
+      
+    }
+    .min-screen .screen-box .screen .content span {
+      
+        font-size: 15px !important;
+    
+        line-height:100% !important;
+        margin: 0rem;
+      
+      
+    }
+    .min-screen .screen-box .screen .content1 p {
+
+        font-size: 15px !important;
+        line-height:100% !important;
+        /* padding-top: 1rem !important; */
+        margin: 0.8rem 0.5rem 0.2rem 0.5rem;
+      
+      
+    }
+    .min-screen .screen-box .screen .content1 span {
+
+        font-size: 15px !important;
+        line-height:100% !important;
+        /* padding-top: 1rem !important; */
+       
+        margin: 0rem !important;
+      
+      
+    }
+  
+  
+    .desktop{
+        display: none !important;
+    }
+    .mobile{
+        display: block;
+    }
+    
+}

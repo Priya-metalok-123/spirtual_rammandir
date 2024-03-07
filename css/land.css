@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/image\ 15.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.bg_land_left {
+    position: relative;
+    width: calc(100% - 40px); /* Adjusting width to accommodate padding before and after */
+    height: 100vh;
+    margin-left: 20px; /* Creating a gap of 20px from the left edge */
+    background: url('../images/Frame\ 2.png') left top;
+    background-repeat: no-repeat;
+    animation: move-left 3s linear infinite;
+}
+.bg_land_main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../images/Frame\ 3.png') right top;
+    background-repeat: no-repeat;
+    animation: move-right 3s linear infinite;
+}
+
+@keyframes move-left {
+    0% {
+        background-position: left bottom;
+    }
+    100% {
+        background-position: left top;
+    }
+}
+
+@keyframes move-right {
+    0% {
+        background-position: right top;
+    }
+    100% {
+        background-position: right bottom;
+    }
+}
+
+.logo_land {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.logo_land h1 {
+    color: #813D22;
+    text-align: center;
+    font-family: Playball;
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 3;
+    position: absolute;
+    top: 20%;
+    justify-content: baseline;
+    left: 30%;
+}
+
+.logo_land h3 {
+    color: #884100;
+    text-align: center;
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding-top: 1.6rem;
+}
+
+.bg_land_main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.bg_land_main .mandala_gif {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0.3;
+}
+
+.bg_land_main .arrow_gif {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: grab;
+}
+
+.line-container,
+.line-container1 {
+    position: absolute;
+    top: 65%;
+    height: 1px;
+    background-image: url('../images/line.svg');
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.line-container {
+    left: 10;
+    width: 40%;
+}
+
+.line-container1 {
+    right: 0;
+    width: 40%;
+}
+
+.drag_arrow_text {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #884100;
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+@media screen and (min-width: 300px) and (max-width: 520px) {
+    .logo_land h3 {
+        color: #884100;
+        font-size: 18px;
+    }
+    .logo_land h1 {
+        color: #884100;
+        font-size: 20px;
+        left: 10%;
+    }
+    .bg_land_main .mandala_gif {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 29%;
+        left: 50%;
+    }
+    .bg_land_main .arrow_gif {
+        width: 80%;
+        top: 36%;
+        left: 49%;
+    }
+    .line-container,
+    .line-container1 {
+        top: 39%;
+    }
+    .drag_arrow_text {
+        bottom: 45%;
+    }
+    .line-container {
+        left: 0;
+        width: 30%;
+    }
+    .line-container1 {
+        right: 0;
+        width: 30%;
+    }
+}

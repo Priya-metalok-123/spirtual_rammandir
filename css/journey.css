@@ -1,0 +1,344 @@
+@font-face {
+    font-family: 'Playball';
+    src: url('../images/fonts/Playball-Regular.ttf') format('truetype');
+
+}
+
+
+
+@font-face {
+    font-family: 'Abhaya Libre SemiBold';
+    src: url('../images/fonts/AbhayaLibre-SemiBold.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Abhaya Libre ExtraBold';
+    src: url('../images/fonts/AbhayaLibre-Bold.ttf') format('truetype');
+
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    /* background-image: url("../images/about/image\ 19.svg"); */
+    background-image: url("../images/about/journey_main_bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e6c097;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.journey_section1 {
+    width: 100%;
+    height: auto;
+    padding: 10rem;
+   
+
+}
+
+.journey_section2 {
+    width: 100%;
+    height: auto;
+    /* background-image: url("../images/about/bg_journey_left.svg");
+    background-position: left;
+    background-size: 17%;
+    background-repeat: no-repeat;
+    padding-top: 10rem; */
+}
+
+.journey_1_left {
+    align-items: end;
+   
+    /* padding-right: 5rem; */
+
+}
+
+.journey_1_left h1 {
+
+    text-align: right;
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    background: var(--Linear, linear-gradient(180deg, #8C5000 17.41%, #533001 84.07%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-right: 1rem;
+
+}
+
+.journey_1_center p {
+    background: var(--Linear, linear-gradient(180deg, #8C5000 17.41%, #533001 84.07%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Abhaya Libre SemiBold";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.journey_1_center p span {
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    background: var(--Linear, linear-gradient(180deg, #8C5000 17.41%, #533001 84.07%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.journey_1_right h1 {
+    color: var(--8-c-5000, #8C5000);
+    text-align: left;
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    opacity: 0.1;
+}
+.journey_img_main{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+.journey_img_main img{
+    max-width: 80%;
+}
+.books_bg{
+    background-image: url("../images/about/books.svg");
+    background-position: bottom right -10px;
+    background-repeat: no-repeat;
+    width:100%;
+    height:auto;
+    background-size: 20%;
+    padding-bottom: 10rem;
+}
+@media (min-width: 1400px) and (max-width: 1500px) {
+    .journey_section1 {
+     
+        padding: 1rem !important;
+       
+    
+    }
+    
+   
+
+}
+@media (min-width: 300px) and (max-width: 600px) {
+    .books_bg{
+        background-image: url("../images/about/books.svg");
+        background-position: bottom right -10px;
+        background-repeat: no-repeat;
+        width:100%;
+        height:auto;
+        background-size: 50%;
+    }
+    .body {
+        margin: 0;
+        padding: 0;
+        background-image: url("../images/about/image\ 19.svg");
+        background-repeat: no-repeat;
+        background-size: initial;
+        background-color: #e6c097;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+        overflow-x: hidden !important;
+    }
+    .journey_section1 {
+     
+        padding:0 !important;
+        
+       
+    
+    }
+    .journey_img_main{
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        padding-top: 7rem;
+    }
+    .journey_img_main img{
+        max-width: 70%;
+    }
+    .journey_1_left {
+        align-items: center !important;
+        text-align: center !important;
+        justify-content: center !important;
+       
+        /* padding-right: 5rem; */
+    
+    }
+    
+    .journey_1_left h1 {
+    
+        text-align: center;
+        font-size: 40px;
+        
+    
+    }
+    
+    .journey_1_center p {
+        font-size: 14px;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 2rem 1rem 2rem;
+        margin: auto !important;
+        
+    }
+    
+    .journey_1_center p span {
+       
+        font-size: 18px;
+        align-items: center;
+        text-align: center;
+        margin: auto !important;
+       
+    }
+    
+    .journey_1_right h1 {
+        align-items: center;
+        text-align: center;
+        font-size: 60px;
+        border-bottom: #533001 solid 1px;
+       
+        opacity: 0.1;
+    }
+   
+
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+    .journey_section1 {
+     
+        padding:0 !important;
+        
+       
+    
+    }
+    .body {
+       
+        background-size: initial;
+    }
+    
+    .journey_img_main{
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        padding-top: 6rem;
+    }
+    .journey_img_main img{
+        max-width: 100%;
+    }
+    .journey_1_left h1 {
+    
+       
+        font-size: 50px;
+      
+        
+    
+    }
+    
+    .journey_1_center p {
+        font-size: 23px;
+        
+        padding: 1rem 2rem 1rem 2rem;
+        margin: auto !important;
+        
+    }
+    
+    .journey_1_center p span {
+       
+        font-size: 30px;
+       
+        margin: auto !important;
+       
+    }
+    
+    .journey_1_right h1 {
+      
+        font-size: 80px;
+        border-bottom: #533001 solid 1px;
+       
+        opacity: 0.1;
+    }
+    
+   
+
+}
+@media (min-width: 1001px) and (max-width: 1450px) {
+    .journey_section1 {
+     
+        padding:0 !important;
+        
+       
+    
+    }
+    .body {
+      
+        background-size: inherit;
+       
+    }
+    
+    .journey_img_main{
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        padding-top: 6rem;
+    }
+    .journey_img_main img{
+        max-width: 100%;
+    }
+    .journey_1_left h1 {
+    
+       
+        /* font-size: 40px; */
+      
+        
+    
+    }
+    
+    .journey_1_center p {
+        font-size: 23px;
+        
+        padding: 1rem 2rem 1rem 2rem;
+        margin: auto !important;
+        
+    }
+    
+    .journey_1_center p span {
+       
+        font-size: 30px;
+       
+        margin: auto !important;
+       
+    }
+    
+    .journey_1_right h1 {
+      
+        font-size: 100px;
+        border-bottom: #533001 solid 1px;
+       
+        opacity: 0.1;
+    }
+    
+   
+
+}

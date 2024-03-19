@@ -82,7 +82,7 @@
             font-size: 36px;
             font-style: normal;
             font-weight: 800;
-            line-height: 30%;
+            line-height: 40%;
         }
 
         .content_land_main h1 {
@@ -92,7 +92,7 @@
             font-size: 80px;
             font-style: normal;
             font-weight: 400;
-            line-height: 30%;
+            line-height: 120%;
         }
 
         @media (min-width: 300px) and (max-width: 640px) {
@@ -157,12 +157,15 @@
 </head>
 
 <body>
+    <audio autoplay loop id="background-audio">
+        <source src="./images/website music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
     <div class="video-main-enter">
         <div class="video-container">
             <video id="main-video" autoplay loop muted playsinline>
-                <source src="./images/land.mp4" type="video/mp4">
-                <!-- Add additional source elements for other video formats if needed -->
-                Your browser does not support the video tag.
+                <source src="./images/Landing_page.mp4" type="video/mp4">
+              
             </video>
         </div>
     </div>
@@ -170,28 +173,63 @@
         <img src="./images/logo.svg" alt="logo" />
         <h4>Embark on the greatest pilgrimage of all</h4>
         <h1>The Ram Mandir in the Virtual World </h1>
-        <!-- <h4>This text scrolls over the fixed video background.</h4>
-    <h4>Feel free to explore!</h4> -->
+       
     </div>
 
     <script>
-        const video = document.getElementById('main-video');
-        const content = document.getElementById('content_land_main');
-
-        video.addEventListener('timeupdate', function () {
-            if (video.currentTime >= 7) {
-                content.classList.add('show'); // Show the content with smooth transition
-                setTimeout(function () {
-                    window.location.href = "./slider.html"; // Redirect after transition
-                }, 2000); // Wait for 2 seconds before redirecting
-            }
-        });
-
-        // Restart video from beginning when the page is refreshed
         window.onload = function () {
-            video.currentTime = 0;
+            const video = document.getElementById('main-video');
+            const content = document.getElementById('content_land_main');
+            const audio = document.getElementById('background-audio');
+    
+            // Check if audio has been played before
+            const audioPlayedBefore = localStorage.getItem('audioPlayed');
+            if (!audioPlayedBefore) {
+                // If not, play the audio and set the flag in local storage
+                audio.play();
+                localStorage.setItem('audioPlayed', true);
+            }
+    
+            video.addEventListener('timeupdate', function () {
+                if (video.currentTime >= 7) {
+                    content.classList.add('show');
+                    setTimeout(function () {
+                        window.location.href = "./slider.html";
+                    }, 1000);
+                }
+            });
+    
+            // Function to play background music
+            function playBackgroundMusic() {
+                var storedTime = localStorage.getItem('bgMusicTime');
+                if (storedTime) {
+                    audio.currentTime = parseFloat(storedTime);
+                }
+                audio.play();
+            }
+    
+            // Function to save background music time
+            function saveBackgroundMusicTime() {
+                localStorage.setItem('bgMusicTime', audio.currentTime.toString());
+            }
+    
+            // Event listener to play background music when the page loads
+            window.addEventListener('DOMContentLoaded', function () {
+                playBackgroundMusic();
+            });
+    
+            // Event listener to save current playback time when the user leaves the page
+            window.addEventListener('unload', function () {
+                saveBackgroundMusicTime();
+            });
+    
+            // Event listener to remove stored playback time when the user refreshes the page
+            window.addEventListener('beforeunload', function () {
+                localStorage.removeItem('bgMusicTime');
+            });
         };
     </script>
+    
 
 </body>
 

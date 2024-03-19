@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href=" https://www.metalok.io/images/favicon.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/test.css">
+  <link rel="stylesheet" href="./header.css">
   <link rel="stylesheet" href="./css/brands.css">
-  <title>RamMandir</title>
+  <title>RamMandir | Brands&Partners</title>
 </head>
 
 <body class="body-brands">
@@ -16,38 +16,83 @@
     <img src="./images/about/page_loader.gif" alt="Page Loader">
   </div>
   <audio autoplay loop id="background-audio">
-    <source src="./images/the-cradle-of-your-soul-15700.mp3" type="audio/mp3">
+    <source src="./images/website music.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
   <!-- nav start here  -->
   <div class="overlay-navigation">
-    <div class="container">
-    </div>
+    
     <nav role="navigation">
       <ul>
         <li class="fullscreen"><a href="./about.html" data-content="About">
             <div class="links_img">
-              <img class="nav_img " src="./images/default_2.png" alt=" " />
-              <img class="hover-img" src="./images/hover_2.png" alt=" " />
+
+              <img class="nav_img " src="./images/menu/1.png" alt=" " />
+              <img class="hover-img" src="./images/menu/1_hover.png" alt=" " />
+              <div class="menu_text_p">
+                <p>Know the</p>
+                  <p>Company</p>
+                 
+               
+              </div>
+              <div class="svg_line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="106" viewBox="0 0 2 106" fill="none">
+                  <path d="M1 0L0.999995 106" stroke="white" stroke-width="2"/>
+                </svg>
+              </div>
+
             </div>
           </a></li>
         <li class="fullscreen"><a href="./product.html">
             <div class="links_img">
-              <img class="nav_img" src="./images/default_4.png" alt=" " />
-              <img class="hover-img" src="./images/hover_4.png" alt=" " />
+
+              <img class="nav_img " src="./images/menu/2.png" alt=" " />
+              <img class="hover-img" src="./images/menu/2_hover.png" alt=" " />
+              <div class="menu_text_p">
+                <p>Explore</p>
+                  <p>Products</p>
+               
+               
+              </div>
+              <div class="svg_line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="106" viewBox="0 0 2 106" fill="none">
+                  <path d="M1 0L0.999995 106" stroke="white" stroke-width="2"/>
+                </svg>
+              </div>
             </div>
           </a></li>
-        
+
+
         <li class="fullscreen"><a href="./journey.html">
             <div class="links_img">
-              <img class="nav_img" src="./images/default_1.png" alt=" " />
-              <img class="hover-img" src="./images/hover_1.png" alt=" " />
+              <img class="nav_img " src="./images/menu/3.png" alt=" " />
+              <img class="hover-img" src="./images/menu/3_hover.png" alt=" " />
+              <div class="menu_text_p">
+                <p>Story of</p>
+                  <p>Ram Mandir </p>
+              
+              </div>
+              <div class="svg_line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="106" viewBox="0 0 2 106" fill="none">
+                  <path d="M1 0L0.999995 106" stroke="white" stroke-width="2"/>
+                </svg>
+              </div>
             </div>
           </a></li>
-          <li class="fullscreen"><a href="./brands.html">
+        <li class="fullscreen"><a href="./brands.html">
             <div class="links_img">
-              <img class="nav_img" src="./images/default_3.png" alt=" " />
-              <img class=" hover-img" src="./images/hover_3.png" alt=" " />
+              <img class="nav_img " src="./images/menu/4.png" alt=" " />
+              <img class="hover-img" src="./images/menu/4_hover.png" alt=" " />
+              <div class="menu_text_p">
+              
+                  <p>Clients &</p>
+                  <p>Partners</p>
+              </div>
+              <div class="svg_line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="106" viewBox="0 0 2 106" fill="none">
+                  <path d="M1 0L0.999995 106" stroke="white" stroke-width="2"/>
+                </svg>
+              </div>
             </div>
           </a></li>
       </ul>
@@ -57,8 +102,8 @@
     <section class="about_body">
       <a href="./index.html"><img class="logo" src="./images/about/logo.svg" alt="" /></a>
       <div class="open-overlay">
-        <span class="burger-icon">&#9776;</span>
-        <span class="close-icon"><img src="./images/about/close.svg" alt="" /></span>
+        <span class="burger-icon "><img src="./images/burger_2.png" alt="" /></span>
+        <span class="close-icon slide_close"><img src="./images/about/close.svg" alt="" /></span>
       </div>
     </section>
 
@@ -216,12 +261,12 @@
       var loader = document.querySelector('.page-loader');
       setTimeout(function () {
         loader.style.opacity = '0'; // Start fading out after 1 minute
-      }, 60000); // 1 minute in milliseconds
+      }, 6000); // 1 minute in milliseconds
   
       // After the fade out animation completes, hide the loader
       setTimeout(function () {
         loader.style.display = 'none';
-      }, 6000); // 1 minute + 1 second in milliseconds
+      }, 1000); // 1 minute + 1 second in milliseconds
     });
   </script>
 

@@ -40,6 +40,12 @@
     animation: fadein 0.8s ease-in-out;
     transition: transform 0.8s ease-in-out;
 }
+.mobile_main_video{
+    display: none;
+}
+.desktop_mai_video{
+    display: block;
+}
 
 @keyframes fadein {
     0% {
@@ -170,23 +176,78 @@
 .min-screen #back {
     left: 0;
 }
-@media (min-width: 300px) and (max-width: 640px){
+@media (min-width: 300px) and (max-width: 341px){
     .min-screen .screen-box .screen .content,
     .min-screen .screen-box .screen .content1 {
-        left: 7%;
-        right: 10%;
-        transform: none;
+        left: 33% !important;
+        right: 0% !important;
+        /* transform: none; */
+        transform: translateX(-50%) !important;
+     
+    }
+}
+@media (min-width: 342px) and (max-width: 361px){
+    .min-screen .screen-box .screen .content,
+    .min-screen .screen-box .screen .content1 {
+        left: 37% !important;
+        right: 0% !important;
+        /* transform: none; */
+        transform: translateX(-50%) !important;
+     
+    }
+}
+@media (min-width: 362px) and (max-width: 431px){
+    .min-screen .screen-box .screen .content,
+    .min-screen .screen-box .screen .content1 {
+        left: 39% !important;
+        right: 0% !important;
+        /* transform: none; */
+        transform: translateX(-50%) !important;
+     
+    }
+}
+@media (min-width: 432px) and (max-width: 481px){
+    .min-screen .screen-box .screen .content,
+    .min-screen .screen-box .screen .content1 {
+        left: 43% !important;
+        right: 0% !important;
+        /* transform: none; */
+        transform: translateX(-50%) !important;
+     
+    }
+
+}
+@media (min-width: 482px) and (max-width: 590px){
+    .min-screen .screen-box .screen .content,
+    .min-screen .screen-box .screen .content1 {
+        left: 46% !important;
+        right: 0% !important;
+        /* transform: none; */
+        transform: translateX(-50%) !important;
+     
+    }
+
+}
+@media (min-width: 591px) and (max-width: 690px){
+    .min-screen .screen-box .screen .content,
+    .min-screen .screen-box .screen .content1 {
+        left: 50% !important;
+        right: 0% !important;
+        /* transform: none; */
+        transform: translateX(-50%) !important;
      
     }
     .btn-info{
         width: 320px !important;
-        height: 100px ;
+        height: 110px ;
         background-size: contain;
         line-height: 23px !important;
-        background-size: cover;
+        /* background-size: cover; */
+        background: url("./images/slider_paper.svg");
+        background-repeat: no-repeat;
        
     }
-  
+    
     .min-screen .screen-box .screen .content p {
       
         font-size: 15px !important;
@@ -211,6 +272,161 @@
         line-height:100% !important;
         /* padding-top: 1rem !important; */
         margin: 0.8rem 0.5rem 0.2rem 0.5rem;
+      
+      
+    }
+    .min-screen .screen-box .screen .content1 span {
+
+        font-size: 15px !important;
+        line-height:100% !important;
+        /* padding-top: 1rem !important; */
+       
+        margin: 0rem !important;
+      
+      
+    }
+ 
+
+}
+@media (min-width: 691px) and (max-width: 920px){
+    .min-screen .screen-box .screen .content,
+    .min-screen .screen-box .screen .content1 {
+        left: 55% !important;
+        right: 0% !important;
+        /* transform: none; */
+        transform: translateX(-50%) !important;
+     
+    }
+    .btn-info{
+        width: 320px !important;
+        height: 110px ;
+        background-size: contain;
+        line-height: 23px !important;
+        /* background-size: cover; */
+        background: url("./images/slider_paper.svg");
+        background-repeat: no-repeat;
+       
+    }
+    
+    .min-screen .screen-box .screen .content p {
+      
+        font-size: 15px !important;
+    
+        line-height:100% !important;
+        margin: 0.8rem 0.5rem 0.2rem 0.5rem;
+       
+      
+    }
+    .min-screen .screen-box .screen .content span {
+      
+        font-size: 15px !important;
+    
+        line-height:100% !important;
+        margin: 0rem;
+      
+      
+    }
+    .min-screen .screen-box .screen .content1 p {
+
+        font-size: 15px !important;
+        line-height:100% !important;
+        /* padding-top: 1rem !important; */
+        margin: 0.8rem 0.5rem 0.2rem 0.5rem;
+      
+      
+    }
+    .min-screen .screen-box .screen .content1 span {
+
+        font-size: 15px !important;
+        line-height:100% !important;
+        /* padding-top: 1rem !important; */
+       
+        margin: 0rem !important;
+      
+      
+    }
+ 
+
+}
+@media (min-width: 930px) and (max-width: 1100px){
+    .min-screen .screen-box .screen .content,
+    .min-screen .screen-box .screen .content1 {
+        left: 47% !important;
+        right: 0% !important;
+        /* transform: none; */
+        transform: translateX(-50%) !important;
+     
+    }
+
+}
+@media (min-width: 1101px) and (max-width: 1200px){
+    .min-screen .screen-box .screen .content,
+    .min-screen .screen-box .screen .content1 {
+        left: 49% !important;
+        right: 0% !important;
+        /* transform: none; */
+        transform: translateX(-50%) !important;
+     
+    }
+}
+@media (min-width: 1201px) and (max-width: 1400px){
+    .min-screen .screen-box .screen .content,
+    .min-screen .screen-box .screen .content1 {
+        left: 53% !important;
+        right: 0% !important;
+        /* transform: none; */
+        transform: translateX(-50%) !important;
+     
+    }
+}
+@media (min-width: 300px) and (max-width: 640px){
+    .mobile_main_video{
+        display: block;
+    }
+    .desktop_mai_video{
+        display: none;
+    }
+    
+    .slide_close{
+        margin-left: -30px !important;
+        position: fixed;
+      }
+    
+    .btn-info{
+        width: 320px !important;
+        height: 110px ;
+        background-size: contain;
+        line-height: 23px !important;
+        /* background-size: cover; */
+        background: url("./images/slider_paper.svg");
+        background-repeat: no-repeat;
+       
+    }
+ 
+    .min-screen .screen-box .screen .content p {
+      
+        font-size: 15px !important;
+    
+        line-height:100% !important;
+        margin: 0rem 0.5rem 0.2rem 0.5rem;
+       
+      
+    }
+    .min-screen .screen-box .screen .content span {
+      
+        font-size: 15px !important;
+    
+        line-height:100% !important;
+        margin: 0rem;
+      
+      
+    }
+    .min-screen .screen-box .screen .content1 p {
+
+        font-size: 15px !important;
+        line-height:100% !important;
+        /* padding-top: 1rem !important; */
+        margin: 0rem 0.5rem 0.2rem 0.5rem;
       
       
     }

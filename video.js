@@ -48,18 +48,12 @@
 
 
 
-
-
-
-
-
-
 let slides = document.querySelectorAll('.screen-box');
 let index = 0;
 let intervalId;
 
 function startCarousel() {
-    intervalId = setInterval(next, 5000); // Change slide every 5 seconds (adjust as needed)
+    intervalId = setInterval(next, 5000); 
 }
 
 function stopCarousel() {
@@ -77,12 +71,15 @@ function next() {
 function pauseCurrentVideo() {
     let currentVideo = slides[index].querySelector('video');
     currentVideo.pause();
-    currentVideo.currentTime = 0; // Reset video playback position
+    currentVideo.currentTime = 0; 
 }
 
 function playCurrentVideo() {
     let currentVideo = slides[index].querySelector('video');
-    currentVideo.play();
+    if (currentVideo.paused) { 
+        currentVideo.play();
+    }
 }
+playCurrentVideo(); 
 
-startCarousel(); // Start the carousel when the page loads
+startCarousel(); 

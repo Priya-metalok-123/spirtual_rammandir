@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/test.css">
+  <link rel="stylesheet" href="./video.css">
+
+  <link rel="icon" href=" https://www.metalok.io/images/favicon.png" type="image/x-icon">
+  <title>RamMandir</title>
+
+
+</head>
+
+<body>
+  <div class="page-loader">
+    <img src="./images/about/page_loader.gif" alt="Page Loader">
+  </div>
+
+  <audio autoplay loop id="background-audio">
+    <source src="./images/website music.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <!-- nav start here  -->
+  <div class="overlay-navigation">
+    <div class="container">
+
+    </div>
+    <nav role="navigation">
+      <ul>
+        <li class="fullscreen"><a href="./about.html" data-content="About">
+          <div class="links_img">
+            
+            <img class="nav_img " src="./images/default_2.png" alt=" " />
+            <img class="hover-img" src="./images/hover_2.png" alt=" " />
+           
+          </div>
+        </a></li>
+        <li class="fullscreen"><a href="./product.html">
+            <div class="links_img">
+             
+              <img class="nav_img" src="./images/default_4.png" alt=" " />
+              <img class="hover-img" src="./images/hover_4.png" alt=" " />
+            </div>
+          </a></li>
+
+     
+        <li class="fullscreen"><a href="./journey.html">
+            <div class="links_img">
+             
+              <img class="nav_img" src="./images/default_1.png" alt=" " />
+              <img class="hover-img" src="./images/hover_1.png" alt=" " />
+            </div>
+          </a></li>
+          <li class="fullscreen"><a href="./brands.html">
+            <div class="links_img">
+              <img class="nav_img" src="./images/default_3.png" alt=" " />
+              <img class=" hover-img" src="./images/hover_3.png" alt=" " />
+            </div>
+          </a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="home">
+    <a href="./index.html"><img class="logo" src="https://www.metalok.io/images/website-logo.png" alt="" /></a>
+
+    <div class="min-screen">
+        <div class="screen-box active">
+          <div class="screen">
+            <div class="content1">
+              <button class="btn-info">
+                <p>Immersively Experience the essence</p>
+                <span>of Lord Shri Ram within you.</span>
+              </button>
+            </div>
+            <video id="mainVideo" src="./images/Intro Anim For Web.mp4" muted autoplay loop playsinline></video>
+          </div>
+        </div>
+      </div>
+    <div class="open-overlay">
+      <span class="burger-icon">&#9776;</span>
+      <span class="close-icon"><img src="./images/about/close.svg" alt="" /></span>
+    </div>
+  </section>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js'>
+  </script>
+  <script src="./header.js"></script>
+
+  <!-- <script src="./video.js"></script> -->
+  
+  <script>
+    function updateContent(currentTime) {
+      var videoDuration = document.getElementById('mainVideo').duration;
+      var currentVideoTime = currentTime * videoDuration; // Convert percentage to seconds
+
+      if (currentVideoTime >= 0 && currentVideoTime < 13) {
+        // Update content for first interval
+        document.querySelector('.content1 button p').textContent = "Immersively Experience the essence  ";
+        document.querySelector('.content1 button span').textContent = "of Lord Shri Ram within you. ";
+      } else if (currentVideoTime >= 14 && currentVideoTime < 28) {
+        // Update content for second interval
+        document.querySelector('.content1 button p').textContent = "Making mythology emotionally";
+        document.querySelector('.content1 button span').textContent = "tangible through technology";
+      } else if (currentVideoTime >= 28 && currentVideoTime < 44) {
+        // Update content for third interval
+        document.querySelector('.content1 button p').textContent = "Engage in the literal out-of-the";
+        document.querySelector('.content1 button span').textContent = "world spiritual experience";
+      } else if (currentVideoTime >= 44 && currentVideoTime <= 59) {
+        // Update content for fourth interval
+        document.querySelector('.content1 button p').textContent = "A Digital realm of India's";
+        document.querySelector('.content1 button span').textContent = "mythological history";
+      }
+    }
+
+    window.addEventListener('load', function () {
+      var audio = document.getElementById('background-audio');
+      audio.play();
+
+      var mainVideo = document.getElementById('mainVideo');
+
+      mainVideo.addEventListener('timeupdate', function () {
+        var currentTime = mainVideo.currentTime / mainVideo.duration; // Convert currentTime to percentage
+        updateContent(currentTime);
+
+        if (mainVideo.currentTime >= mainVideo.duration) {
+          mainVideo.currentTime = 0; // Restart the video
+          mainVideo.play(); // Play the video
+        }
+      });
+    });
+
+    window.addEventListener('DOMContentLoaded', function () {
+      var loader = document.querySelector('.page-loader');
+      loader.style.display = 'flex'; // Show the loader
+    });
+
+    window.addEventListener('load', function () {
+      var loader = document.querySelector('.page-loader');
+      setTimeout(function () {
+        loader.style.opacity = '0'; // Start fading out after 1 minute
+      }, 6000); // 1 minute in milliseconds
+
+      setTimeout(function () {
+        loader.style.display = 'none';
+      }, 1000); // 1 minute + 1 second in milliseconds
+    });
+</script>
+
+</body>
+</html>

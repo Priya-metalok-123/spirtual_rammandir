@@ -29,7 +29,18 @@
 
 
 }
+.menu_text_p p {
 
+    color: #FFF;
+    text-align: center;
+    font-family: "Cantata One";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100% !important;
+    opacity: 0.5;
+  }
+  
 .product_section1 {
     background-image: url("../images/about/coming_soon_svg.svg");
     background-repeat: no-repeat;
@@ -105,4 +116,36 @@
         line-height: normal;
      
     }
+}
+@media (min-width: 990px) and (max-width: 992px) {
+    .product_section1 {
+        background-image: url("../images/about/coming_soon_svg.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100vw; /* Change width to 100vw to cover the entire viewport width */
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex; /* Add display flex */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+    }
+    .coming_soon_text_div h1 {
+    
+        font-family: Playball;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+     
+    }
+    .coming_soon_text_div {
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 1rem;
+    }
+
 }

@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=<h1>hello>, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./css/test.css">
+  <link rel="stylesheet" href="./header.css">
   <link rel="stylesheet" href="./video.css">
 
   <link rel="icon" href=" https://www.metalok.io/images/favicon.png" type="image/x-icon">
@@ -21,44 +21,83 @@
   </div>
 
   <audio autoplay loop id="background-audio">
-    <source src="./images/the-cradle-of-your-soul-15700.mp3" type="audio/mp3">
+    <source src="./images/website music.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
   <!-- nav start here  -->
   <div class="overlay-navigation">
-    <div class="container">
-
-    </div>
+    
     <nav role="navigation">
       <ul>
         <li class="fullscreen"><a href="./about.html" data-content="About">
-          <div class="links_img">
-            
-            <img class="nav_img " src="./images/default_2.png" alt=" " />
-            <img class="hover-img" src="./images/hover_2.png" alt=" " />
-           
-          </div>
-        </a></li>
+            <div class="links_img">
+
+              <img class="nav_img " src="./images/menu/1.png" alt=" " />
+              <img class="hover-img" src="./images/menu/1_hover.png" alt=" " />
+              <div class="menu_text_p">
+                <p>Know the </p>
+                  <p> Company</p>
+                 
+               
+              </div>
+              <div class="svg_line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="106" viewBox="0 0 2 106" fill="none">
+                  <path d="M1 0L0.999995 106" stroke="white" stroke-width="2"/>
+                </svg>
+              </div>
+
+            </div>
+          </a></li>
         <li class="fullscreen"><a href="./product.html">
             <div class="links_img">
-             
-              <img class="nav_img" src="./images/default_4.png" alt=" " />
-              <img class="hover-img" src="./images/hover_4.png" alt=" " />
+
+              <img class="nav_img " src="./images/menu/2.png" alt=" " />
+              <img class="hover-img" src="./images/menu/2_hover.png" alt=" " />
+              <div class="menu_text_p">
+                <p>Explore </p>
+                  <p>Products</p>
+               
+               
+              </div>
+              <div class="svg_line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="106" viewBox="0 0 2 106" fill="none">
+                  <path d="M1 0L0.999995 106" stroke="white" stroke-width="2"/>
+                </svg>
+              </div>
             </div>
           </a></li>
 
-     
+
         <li class="fullscreen"><a href="./journey.html">
             <div class="links_img">
-             
-              <img class="nav_img" src="./images/default_1.png" alt=" " />
-              <img class="hover-img" src="./images/hover_1.png" alt=" " />
+              <img class="nav_img " src="./images/menu/3.png" alt=" " />
+              <img class="hover-img" src="./images/menu/3_hover.png" alt=" " />
+              <div class="menu_text_p">
+                <p>Story of</p>
+                  <p> Ram Mandir </p>
+              
+              </div>
+              <div class="svg_line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="106" viewBox="0 0 2 106" fill="none">
+                  <path d="M1 0L0.999995 106" stroke="white" stroke-width="2"/>
+                </svg>
+              </div>
             </div>
           </a></li>
-          <li class="fullscreen"><a href="./brands.html">
+        <li class="fullscreen"><a href="./brands.html">
             <div class="links_img">
-              <img class="nav_img" src="./images/default_3.png" alt=" " />
-              <img class=" hover-img" src="./images/hover_3.png" alt=" " />
+              <img class="nav_img " src="./images/menu/4.png" alt=" " />
+              <img class="hover-img" src="./images/menu/4_hover.png" alt=" " />
+              <div class="menu_text_p">
+              
+                  <p>Clients &</p>
+                  <p>Partners</p>
+              </div>
+              <div class="svg_line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="106" viewBox="0 0 2 106" fill="none">
+                  <path d="M1 0L0.999995 106" stroke="white" stroke-width="2"/>
+                </svg>
+              </div>
             </div>
           </a></li>
       </ul>
@@ -69,76 +108,23 @@
     <a href="./index.html"><img class="logo" src="https://www.metalok.io/images/website-logo.png" alt="" /></a>
 
     <div class="min-screen">
-      <div class="screen-box active">
-        <div class="screen">
-
-          <div class="content1">
-            <button class="btn-info">
-              <p>Immersively Experience the essence  </p>
-              <span> of Lord Shri Ram within you.</span> 
-            </button>
-
-           
+        <div class="screen-box active">
+          <div class="screen">
+            <div class="content1">
+              <button class="btn-info">
+                <p>Immersively Experience the essence</p>
+                <span>of Lord Shri Ram within you.</span>
+              </button>
+            </div>
+            <video id="mainVideo" src="./images/Intro Anim For Web.mp4" muted autoplay loop playsinline class="desktop_mai_video"></video>
+            <video id="mainVideo" src="./images/mobile_video.mp4" muted autoplay loop playsinline class="mobile_main_video"></video>
           </div>
-
-
-
-          <video src="./images/Bharath(1).mp4" muted autoplay loop></video>
         </div>
       </div>
-
-      <div class="screen-box">
-        <div class="screen">
-          <div class="content">
-            <button class="btn-info">
-              <p> Making mythology emotionally </p>
-              <span>tangible through technology</span>  
-              
-            </button>
-
-           
-          </div>
-          <video src="./images/Lakshman.mp4" muted autoplay loop class="desktop" ></video>
-          <video src="./images/Bharat Mobile.mp4" muted autoplay loop class="mobile"></video>
-        </div>
+      <div class="open-overlay">
+        <span class="burger-icon "><img src="./images/burger_2.png" alt="" /></span>
+        <span class="close-icon "><img src="./images/close.png" alt="" /></span>
       </div>
-
-      <div class="screen-box">
-        <div class="screen">
-          <div class="content1">
-            <button class="btn-info">
-              <p>A Digital realm of India's </p>
-              <span> mythological history</span> 
-            </button>
-
-           
-          </div>
-          <video src="./images/Ram.mp4" muted autoplay loop></video>
-        </div>
-      </div>
-
-      <div class="screen-box">
-        <div class="screen">
-          <div class="content">
-            <button class="btn-info">
-              <p>Engage in the literal out-of-the </p>
-             <span>world spiritual experience</span>  
-            </button>
-           
-          </div>
-          <video src="./images/Sahadev.mp4" muted autoplay loop></video>
-        </div>
-      </div>
-
-
-      <!-- <div id="next" onclick="next()"> > </div>
-        <div id="back" onclick="back()"> < </div> -->
-
-    </div>
-    <div class="open-overlay">
-      <span class="burger-icon">&#9776;</span>
-      <span class="close-icon"><img src="./images/about/close.svg" alt="" /></span>
-    </div>
   </section>
   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js'></script>
@@ -146,33 +132,65 @@
   </script>
   <script src="./header.js"></script>
 
-  <script src="./video.js"></script>
+  <!-- <script src="./video.js"></script> -->
+  
   <script>
-    // Play background audio when the page loads
+    function updateContent(currentTime) {
+      var videoDuration = document.getElementById('mainVideo').duration;
+      var currentVideoTime = currentTime * videoDuration; // Convert percentage to seconds
+
+      if (currentVideoTime >= 0 && currentVideoTime < 13) {
+        // Update content for first interval
+        document.querySelector('.content1 button p').textContent = "Immersively Experience the essence  ";
+        document.querySelector('.content1 button span').textContent = "of Lord Shri Ram within you. ";
+      } else if (currentVideoTime >= 14 && currentVideoTime < 28) {
+        // Update content for second interval
+        document.querySelector('.content1 button p').textContent = "Making mythology emotionally";
+        document.querySelector('.content1 button span').textContent = "tangible through technology";
+      } else if (currentVideoTime >= 28 && currentVideoTime < 44) {
+        // Update content for third interval
+        document.querySelector('.content1 button p').textContent = "Engage in the literal out-of-the";
+        document.querySelector('.content1 button span').textContent = "world spiritual experience";
+      } else if (currentVideoTime >= 44 && currentVideoTime <= 59) {
+        // Update content for fourth interval
+        document.querySelector('.content1 button p').textContent = "A Digital realm of India's";
+        document.querySelector('.content1 button span').textContent = "mythological history";
+      }
+    }
+
     window.addEventListener('load', function () {
       var audio = document.getElementById('background-audio');
       audio.play();
+
+      var mainVideo = document.getElementById('mainVideo');
+
+      mainVideo.addEventListener('timeupdate', function () {
+        var currentTime = mainVideo.currentTime / mainVideo.duration; // Convert currentTime to percentage
+        updateContent(currentTime);
+
+        if (mainVideo.currentTime >= mainVideo.duration) {
+          mainVideo.currentTime = 0; // Restart the video
+          mainVideo.play(); // Play the video
+        }
+      });
     });
-  </script>
-<script>
-  // Show the page loader when the page starts loading
-  window.addEventListener('DOMContentLoaded', function () {
-    var loader = document.querySelector('.page-loader');
-    loader.style.display = 'flex'; // Show the loader
-  });
 
-  // Hide the page loader when the page content is fully loaded
-  window.addEventListener('load', function () {
-    var loader = document.querySelector('.page-loader');
-    setTimeout(function () {
-      loader.style.opacity = '0'; // Start fading out after 1 minute
-    }, 60000); // 1 minute in milliseconds
+    window.addEventListener('DOMContentLoaded', function () {
+      var loader = document.querySelector('.page-loader');
+      loader.style.display = 'flex'; // Show the loader
+    });
 
-    // After the fade out animation completes, hide the loader
-    setTimeout(function () {
-      loader.style.display = 'none';
-    }, 6000); // 1 minute + 1 second in milliseconds
-  });
+    window.addEventListener('load', function () {
+      var loader = document.querySelector('.page-loader');
+      setTimeout(function () {
+        loader.style.opacity = '0'; // Start fading out after 1 minute
+      }, 6000); // 1 minute in milliseconds
+
+      setTimeout(function () {
+        loader.style.display = 'none';
+      }, 1000); // 1 minute + 1 second in milliseconds
+    });
 </script>
+
 </body>
 </html>
